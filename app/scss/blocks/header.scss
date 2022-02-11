@@ -1,0 +1,155 @@
+.header {
+  background: url(/img/main-screen__bgc.jpg) no-repeat center center/cover;
+  padding-top: 40px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1760px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.nav {
+  padding: 0 10px;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 56px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-family: $basic-family;
+    text-decoration: none;
+    color: $white;
+    font-size: 16px;
+    line-height: 150%;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: #df5950;
+    }
+  }
+}
+
+.count {
+  display: flex;
+  margin-top: 50px;
+
+  &__item {
+    background-color: $second-bg;
+    padding: 20px 30px;
+  }
+
+  &__number {
+    font-family: $basic-family;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: $white;
+    text-align: center;
+  }
+
+  &__day {
+    font-family: $basic-family;
+    font-size: 16px;
+    line-height: 140%;
+    color: $white;
+    opacity: 0.4;
+  }
+}
+
+.bottom-block {
+  background-color: $second-bg;
+  margin-top: 218px;
+  padding: 36px 0;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    font-weight: 700;
+  }
+
+  &__people {
+    padding-left: 81px;
+  }
+
+  &__member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-family: $basic-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white;
+    opacity: 0.4;
+  }
+
+  &__number {
+    font-family: $basic-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white;
+    padding-left: 30px;
+  }
+
+  &__earned {
+    flex-grow: 1;
+    padding-left: 81px;
+
+    & .bottom-block__member {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.progress {
+  &__bg {
+    max-width: 714px;
+    height: 6px;
+    background: $white;
+  }
+
+  &__bar {
+    height: 6px;
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  }
+
+  &__score {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__number {
+    font-family: $basic-family;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white;
+    opacity: 0.4;
+  }
+}

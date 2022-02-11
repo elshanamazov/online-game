@@ -1,0 +1,37 @@
+body {
+  background-color: $main-bg;
+}
+
+.container {
+  max-width: 1344px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.btn {
+  font-family: $basic-family;
+  display: block;
+  border: 0;
+  padding: 10px 30px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50px;
+
+  font-size: 16px;
+  line-height: 150%;
+  color: $white;
+  transition: text-shadow 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    text-shadow: 0 0 0.65px $white, 0 0 0.65px $white;
+  }
+}
+
+.title {
+  max-width: 920px;
+  font-family: $basic-family;
+  font-size: 64px;
+  line-height: 140%;
+  color: $white;
+}
