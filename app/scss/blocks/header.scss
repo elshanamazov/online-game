@@ -34,7 +34,7 @@
     text-decoration: none;
     color: $white;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 24px;
     transition: color 0.2s ease-in;
 
     &:hover {
@@ -45,7 +45,10 @@
 
 .count {
   display: flex;
-  margin-top: 50px;
+
+  &._modify {
+    margin-top: 50px;
+  }
 
   &__item {
     background-color: $second-bg;
@@ -56,7 +59,7 @@
     font-family: $basic-family;
     font-weight: 700;
     font-size: 36px;
-    line-height: 140%;
+    line-height: 50px;
     color: $white;
     text-align: center;
   }
@@ -64,9 +67,8 @@
   &__day {
     font-family: $basic-family;
     font-size: 16px;
-    line-height: 140%;
-    color: $white;
-    opacity: 0.4;
+    line-height: 22px;
+    color: $white-opacity;
   }
 }
 
@@ -81,7 +83,7 @@
     align-items: center;
   }
 
-  &__btn {
+  & .btn._modify {
     background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     font-weight: 700;
   }
@@ -104,16 +106,15 @@
     font-family: $basic-family;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
-    color: $white;
-    opacity: 0.4;
+    line-height: 24px;
+    color: $white-opacity;
   }
 
   &__number {
     font-family: $basic-family;
     font-weight: 700;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 24px;
     color: $white;
     padding-left: 30px;
   }
@@ -148,8 +149,7 @@
   &__number {
     font-family: $basic-family;
     font-size: 16px;
-    line-height: 150%;
-    color: $white;
-    opacity: 0.4;
+    line-height: 24px;
+    color: $white-opacity;
   }
 }

@@ -18,7 +18,7 @@ body {
   border-radius: 50px;
 
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   color: $white;
   transition: text-shadow 0.2s ease-in;
   cursor: pointer;
@@ -31,7 +31,7 @@ body {
 .title {
   max-width: 920px;
   font-family: $basic-family;
-  font-size: 64px;
-  line-height: 140%;
+  font-size: 51px;
+  line-height: 76px;
   color: $white;
 }
