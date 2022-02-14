@@ -14,7 +14,6 @@ body {
   display: block;
   border: 0;
   padding: 10px 30px;
-  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   border-radius: 50px;
 
   font-size: 16px;
@@ -26,6 +25,16 @@ body {
   &:hover {
     text-shadow: 0 0 0.65px $white, 0 0 0.65px $white;
   }
+}
+
+.btn--primary {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  font-weight: 400;
+}
+
+.btn--secondary {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  font-weight: 700;
 }
 
 .title {
