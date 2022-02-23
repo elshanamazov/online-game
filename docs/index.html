@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1645403777809">
+    <link rel="stylesheet" href="css/main.css?t=1645617661501">
 </head>
-
-<body>
+<body class="js-body">
+<picture><source srcset="img/Desktop.avif" type="image/avif"><source srcset="img/Desktop.webp" type="image/webp"><img hidden src="img/Desktop.jpg" alt="" class="pp"></picture>
+	<style>
+		.pp {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%) scale(1);
+			pointer-events: none;
+			opacity: .5;
+			transform-origin: top center;
+			z-index: 999;
+		}
+	</style>
         <!-- подключаем шапку -->
         <header class="header">
    <div class="header__wrap">
-		<a href="#" class="logo">
+		<a href="#" class="logo header__logo">
 			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="logo" clip-path="url(#clip0_1_180)">
 				<g id="Group">
@@ -56,7 +68,7 @@
 			</ul>
 		</nav>
 
-		<button class="btn btn--primary">Зайти в кабинет</button>
+		<button class="btn header__btn btn--primary">Зайти в кабинет</button>
 
 		<buttton class="burger js-burger"></buttton>
 	</div>
@@ -125,7 +137,7 @@
    
 </footer>
     <!-- подключаем js -->
-    <script src="js/main.js?t=1645403777809"></script>
+    <script src="js/main.js?t=1645617661501"></script>
 </body>
 
 </html>

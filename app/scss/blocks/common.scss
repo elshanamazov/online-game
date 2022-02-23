@@ -2,6 +2,10 @@ body {
   background-color: $main-bg;
 }
 
+.body--lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1344px;
   margin: 0 auto;
@@ -20,6 +24,7 @@ body {
   border: 0;
   padding: 10px 30px;
   border-radius: 50px;
+  min-width: 180px;
 
   font-size: 16px;
   line-height: 24px;
@@ -33,10 +38,19 @@ body {
 
   @media (max-width: $tablet) {
     padding: 10px 20px;
+    min-width: 170px;
   }
 
   @media (max-width: $mobileSmall) {
     font-size: 14px;
+    min-width: 160px;
+  }
+}
+
+.header__btn {
+  @media (max-width: $tablet) {
+    margin-left: auto;
+    margin-right: 10px;
   }
 }
 
@@ -53,8 +67,8 @@ body {
 .title {
   max-width: 920px;
   font-family: $basic-family;
-  font-size: 51px;
-  line-height: 76px;
+  font-size: 64px;
+  line-height: 88px;
   color: $white;
 
   @media (max-width: $tablet) {
@@ -106,9 +120,6 @@ body {
   }
 
   &._active {
-    position: absolute;
-    top: 50px;
-    right: 16px;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     z-index: 55;

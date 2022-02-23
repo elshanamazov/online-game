@@ -7,8 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-
-<body>
+<body class="js-body">
+	<img hidden src="img/Desktop.jpg" alt="" class="pp">
+	<style>
+		.pp {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%) scale(1);
+			pointer-events: none;
+			opacity: .5;
+			transform-origin: top center;
+			z-index: 999;
+		}
+	</style>
         <!-- подключаем шапку -->
         @@include('blocks/header.html')
 		  <main class="main">
