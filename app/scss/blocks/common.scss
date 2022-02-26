@@ -1,0 +1,135 @@
+body {
+  background-color: $main-bg;
+}
+
+.body--lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1344px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (max-width: $tablet) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.btn {
+  font-family: $basic-family;
+  display: block;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  min-width: 180px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+  transition: text-shadow 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    text-shadow: 0 0 0.65px $white, 0 0 0.65px $white;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 10px 20px;
+    min-width: 170px;
+  }
+
+  @media (max-width: $mobileSmall) {
+    font-size: 14px;
+    min-width: 160px;
+  }
+}
+
+.header__btn {
+  @media (max-width: $tablet) {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
+.btn--primary {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  font-weight: 400;
+}
+
+.btn--secondary {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  font-weight: 700;
+}
+
+.title {
+  max-width: 920px;
+  font-family: $basic-family;
+  font-size: 64px;
+  line-height: 88px;
+  color: $white;
+
+  @media (max-width: $tablet) {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  @media (max-width: $mobileSmall) {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+.burger {
+  position: relative;
+  display: none;
+  margin: 0 10px;
+  width: 30px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  border-top: 3px solid #c54d4e;
+  border-bottom: 3px solid #c54d4e;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #c54d4e;
+    transition: transform 0.2s ease;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+
+  &._active {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    z-index: 55;
+  }
+
+  &._active::after {
+    transform: rotate(-45deg);
+  }
+
+  &._active::before {
+    transform: rotate(45deg);
+  }
+}
