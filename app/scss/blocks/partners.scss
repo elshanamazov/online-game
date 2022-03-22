@@ -9,6 +9,10 @@
     padding-top: 70px;
   }
 
+  @media (max-width: $mobile) {
+    padding-top: 40px;
+  }
+
   &__title {
     font-family: $basic-family;
     position: relative;
@@ -25,27 +29,50 @@
       display: block;
       position: absolute;
       background: url(../img/icons/icon-heading.svg) no-repeat;
+      background-size: cover;
       width: 95px;
       height: 95px;
       top: 50%;
       left: 0;
       transform: translateY(-50%) rotate(180deg);
+
+      @media (max-width: $tablet) {
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (max-width: $mobile) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: 0;
+        transform: translateY(0) rotate(180deg);
+      }
     }
 
     @media (max-width: $tablet) {
-      font-size: 42px;
-      line-height: 56px;
+      padding-left: 110px;
+      font-size: 32px;
+      line-height: 44px;
       margin-bottom: 80px;
     }
 
     @media (max-width: $mobile) {
-      margin-bottom: 70px;
+      margin-bottom: 60px;
+      padding-left: 90px;
     }
 
     @media (max-width: $mobileSmall) {
       font-size: 28px;
       line-height: 36px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
+      padding-left: 0;
+      padding-top: 70px;
     }
   }
 
@@ -56,37 +83,54 @@
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
+    @media (max-width: $tablet) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
   }
 
   &__brends {
     padding: 30px 60px;
     border-right: 1px solid $white-opacity;
-    flex: 0 0 25%;
+    width: 25%;
     padding-left: 10px;
     padding-right: 10px;
+
+    &:nth-child(4) ~ & {
+      border-top: 1px solid $white-opacity;
+    }
+
     &:nth-child(4n) {
-      border-right: none;
+      border-right: 0;
     }
 
     @media (max-width: $tablet) {
-      flex: 0 0 33%;
-      &:nth-child(3n) {
-        border-right: none;
-      }
-    }
-
-    @media (max-width: $mobile) {
-      flex: 0 0 50%;
-      &:nth-child(2n) {
-        border-right: none;
+      flex-shrink: 0;
+      margin-right: -1px;
+      min-width: 140px;
+      &:nth-child(1) ~ &,
+      &:nth-child(1) {
+        border: 1px solid $white-opacity;
       }
     }
   }
 
   &__img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 198px;
     margin: 0 auto;
+  }
+}
+
+.breakpoint {
+  display: none;
+}
+
+@media (max-width: $mobileSmall) {
+  .breakpoint {
+    display: block;
   }
 }
