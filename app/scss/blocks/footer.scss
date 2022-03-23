@@ -1,0 +1,91 @@
+.footer {
+  padding-top: 200px;
+  padding-bottom: 105px;
+
+  &__title {
+    font-family: $basic-family;
+    color: $white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    max-width: 411px;
+    font-family: $basic-family;
+    font-weight: 400;
+    color: $white-opacity;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__form {
+    max-width: 492px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    &-wrap {
+      display: flex;
+      position: relative;
+    }
+
+    &-input {
+      font-family: $basic-family;
+      width: 100%;
+      padding: 17px 200px 17px 30px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      outline: none;
+      background: $white-opacity;
+      color: rgba(255, 255, 255, 0.8);
+      border-radius: 50px;
+      &::placeholder {
+        font-family: $basic-family;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    &-btn {
+      position: absolute;
+      height: 100%;
+      right: 0;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    border-radius: 100%;
+    transition: border-radius 0.2s ease-in;
+    &:hover {
+      border-radius: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    max-width: 100%;
+    height: auto;
+  }
+}
