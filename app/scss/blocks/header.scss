@@ -2,6 +2,15 @@
   background: #000 url(../img/main-screen__bgc.jpg) no-repeat center
     center/cover;
   padding-top: 40px;
+
+  @media (max-width: $tablet) {
+    padding-top: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 20px;
+  }
+
   &__wrap {
     display: flex;
     justify-content: space-between;
