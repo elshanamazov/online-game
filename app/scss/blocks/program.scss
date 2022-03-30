@@ -129,7 +129,7 @@
 
       &:nth-child(odd) {
         padding-right: 60px;
-        padding-bottom: 90px;
+        padding-bottom: 80px;
         @media (max-width: $tablet) {
           padding-right: 50px;
           padding-bottom: 70px;
@@ -162,7 +162,7 @@
 
       &:nth-child(even) {
         padding-left: 60px;
-        padding-bottom: 90px;
+        padding-bottom: 80px;
         text-align: left;
         margin-left: auto;
         @media (max-width: $tablet) {
@@ -226,5 +226,7 @@
 }
 
 .program__skills-desc .program__br {
-  display: none;
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
