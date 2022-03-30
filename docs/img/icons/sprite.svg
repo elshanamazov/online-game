@@ -106,10 +106,7 @@
 <stop stop-color="#C89AFC"/>
 <stop offset="1" stop-color="#7C6AFA"/>
 </linearGradient>
-</defs><symbol id="clock" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-</symbol><symbol id="clouds-fill" viewBox="0 0 16 16">
+</defs><symbol id="clouds-fill" viewBox="0 0 16 16">
   <path d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5z"/>
   <path d="M14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.769z"/>
 </symbol><symbol id="coin" viewBox="0 0 16 16">

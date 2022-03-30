@@ -1,5 +1,16 @@
 .program {
   padding-top: 240px;
+  @media (max-width: $tablet) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 40px;
+  }
 
   &__title {
     font-family: $basic-family;
@@ -22,6 +33,40 @@
       left: 50%;
       top: 0;
       transform: translateX(-50%) rotate(135deg);
+
+      @media (max-width: $tablet) {
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (max-width: $mobile) {
+        width: 60px;
+        height: 60px;
+        left: 30px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 32px;
+      line-height: 44px;
+      padding-top: 115px;
+    }
+
+    @media (max-width: $mobile) {
+      padding-top: 90px;
+      text-align: left;
+    }
+
+    @media (max-width: $mobileSmall) {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 20px;
+      padding-top: 70px;
     }
   }
 
@@ -35,6 +80,19 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 90px;
+    @media (max-width: $tablet) {
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: $mobile) {
+      text-align: left;
+      margin-bottom: 50px;
+      margin-left: 0;
+    }
+
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 40px;
+    }
   }
 
   &__skills {
@@ -52,6 +110,9 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+      @media (max-width: $mobile) {
+        left: 0;
+      }
     }
 
     &-item {
@@ -61,9 +122,42 @@
       position: relative;
       text-align: right;
 
+      @media (max-width: $mobile) {
+        width: auto;
+        text-align: left;
+      }
+
       &:nth-child(odd) {
         padding-right: 60px;
         padding-bottom: 90px;
+        @media (max-width: $tablet) {
+          padding-right: 50px;
+          padding-bottom: 70px;
+        }
+
+        @media (max-width: $mobile) {
+          padding-right: 0;
+          padding-left: 60px;
+          padding-bottom: 50px;
+        }
+
+        @media (max-width: $mobileSmall) {
+          padding-bottom: 30px;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 40px;
+          height: 1px;
+          background: $white-opacity;
+          right: 0;
+          top: 60px;
+          @media (max-width: $mobile) {
+            left: 0;
+          }
+        }
       }
 
       &:nth-child(even) {
@@ -71,6 +165,29 @@
         padding-bottom: 90px;
         text-align: left;
         margin-left: auto;
+        @media (max-width: $tablet) {
+          padding-left: 60px;
+          padding-bottom: 70px;
+        }
+
+        @media (max-width: $mobile) {
+          margin-left: 0;
+          padding-bottom: 50px;
+        }
+
+        @media (max-width: $mobileSmall) {
+          padding-bottom: 30px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 40px;
+          height: 1px;
+          background: $white-opacity;
+          left: 0;
+          top: 60px;
+        }
       }
 
       &:last-child {
@@ -95,20 +212,19 @@
       font-size: 28px;
       line-height: 38px;
       margin-bottom: 15px;
-    }
+      @media (max-width: $tablet) {
+        font-size: 21px;
+        line-height: 32px;
+      }
 
-    &-line {
-      display: block;
-      position: absolute;
-      width: 40px;
-      height: 1px;
-      background: $white-opacity;
-      right: 0;
-      top: 25%;
-
-      &:nth-child(even) {
-        left: 0;
+      @media (max-width: $mobileSmall) {
+        font-size: 18px;
+        line-height: 24px;
       }
     }
   }
+}
+
+.program__skills-desc .program__br {
+  display: none;
 }
