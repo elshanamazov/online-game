@@ -1,15 +1,15 @@
 .teachers {
-  padding-top: 230px;
+  padding-top: 200px;
 
   @media (max-width: $tablet) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: $mobile) {
     padding-top: 100px;
   }
 
-  @media (max-width: $mobile) {
-    padding-top: 80px;
-  }
-
-  @media (max-width: $mobile) {
+  @media (max-width: $mobileSmall) {
     padding-top: 60px;
   }
 
@@ -107,6 +107,7 @@
     &-img {
       width: 100%;
       height: 100%;
+      object-position: top center;
       object-fit: cover;
     }
 
