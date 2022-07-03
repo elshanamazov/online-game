@@ -1,12 +1,16 @@
 .start {
-  padding-top: 225px;
+  padding-top: 200px;
 
   @media (max-width: $tablet) {
-    padding-top: 100px;
+    padding-top: 110px;
   }
 
   @media (max-width: $mobile) {
-    padding-top: 70px;
+    padding-top: 90px;
+  }
+
+  @media (max-width: $mobileSmall) {
+    padding-top: 60px;
   }
 
   &__title {
